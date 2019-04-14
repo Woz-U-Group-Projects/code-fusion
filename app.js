@@ -25,7 +25,7 @@ app.use("/", indexRouter);
 app.use("/users", userRouter);
 
 // connect to a local mongodb, chave to URL if hosted database
-var mongoDB = "mongodb://127.0.0.1/database";
+var mongoDB = "mongodb://dbuser:password1@ds137596.mlab.com:37596/codefusion";
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
