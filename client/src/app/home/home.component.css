@@ -1,0 +1,66 @@
+.color 
+{
+  color: aquamarine;
+}
+
+  .h1 {
+      text-align: center;
+  }
+
+  .h2 {
+    text-align: center;
+}
+
+@media (min-width: 576px) { .color 
+  {
+    color: aquamarine;
+  }
+  
+    .h1 {
+        text-align: center;
+    }
+  
+    .h2 {
+      text-align: center;
+  } }
+
+
+@media (min-width: 768px) { .color 
+  {
+    color: aquamarine;
+  }
+  
+    .h1 {
+        text-align: center;
+    }
+  
+    .h2 {
+      text-align: center;
+  } }
+
+@media (min-width: 992px) { .color 
+  {
+    color: aquamarine;
+  }
+  
+    .h1 {
+        text-align: center;
+    }
+  
+    .h2 {
+      text-align: center;
+  } }
+
+
+@media (min-width: 1200px) {.color 
+  {
+    color: aquamarine;
+  }
+  
+    .h1 {
+        text-align: center;
+    }
+  
+    .h2 {
+      text-align: center;
+  } }
