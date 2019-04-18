@@ -1,3 +1,66 @@
+<!--
+<form>
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label [(ngModel)]="user.firstName" for="validationDefault01">First name</label>
+        <input type="text" class="form-control" id="validationDefault01" placeholder="First name" required>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label [(ngModel)]="user.lastName" for="validationDefault02">Last name</label>
+        <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" required>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label [(ngModel)]="user.username" for="validationDefaultUsername">Username</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+          </div>
+          <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label [(ngModel)]="user.email" for="validationDefault03">Email</label>
+        <input type="text" class="form-control" id="validationDefault03" placeholder="Email" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label [(ngModel)]="user.userId" for="validationDefault04">UserId</label>
+        <input type="text" class="form-control" id="validationDefault04" placeholder="UserId" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label [(ngModel)]="user.password" for="validationDefault05">Password</label>
+        <input type="text" class="form-control" id="validationDefault05" placeholder="Password" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+        <label class="form-check-label" for="invalidCheck2">
+          Agree to terms and conditions
+        </label>
+      </div>
+    </div>
+    <button (click)="register()" class="btn btn-primary" type="submit">Submit form</button>
+  </form>
+
+  <div class="container">
+
+      <div class="row">
+      
+      <div class="col-xs-6">
+              <a href="login">
+      <button type="button" class="btn btn-primary btn-lg btn-block">login</button>
+  </a>
+  </div>
+      <div class="col-xs-6">
+              <a href="register">
+      <button type="button" class="btn btn-primary btn-lg btn-block">register</button>
+  </a>
+  </div>
+      </div>
+  </div>
+
 <h3>Register New User</h3>
 <p>
   <input [(ngModel)]="user.firstName" placeholder="first name" />
@@ -12,3 +75,92 @@
   <br />
   <button (click)="register()">register</button>
 </p>
+
+  -->
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Responsive Registration Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+
+      body{
+        background-color: #f1f1f1;
+      }
+      
+      .register-form{
+        margin: 50px auto;
+        padding: 25px 20px;
+        background: #3a1975;
+        box-shadow: 2px 2px 4px #ab8de0;
+        border-radius: 5px;
+        color: #fff;
+      }
+      .register-form h2{
+        margin-top: 0px;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        border: 1px solid #25055f;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2">
+          <div class="register-form">
+            <form action="" method="post">
+              <h2 class="text-center">Registration</h2>
+              <p class="hint-text">Create your account. It's free and takes just a minute.</p>
+              <div class="row">
+                <div class="col-md-6 col-xs-12">
+                  <div class="form-group">
+                    <input type="text" name="first_name" class="form-control" placeholder="First Name" required="required">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="form-group">
+                    <input type="text" name="last_name" class="form-control" placeholder="Last Name" required="required">
+                  </div> 
+                </div>     
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+              </div>
+              <div class="form-group">
+                <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" required="required">
+              </div>        
+              <div class="form-group">
+                <label class="checkbox-inline">
+                  <input type="checkbox" required="required"> You agree to the <a href="#">Terms</a> & <a href="#">Conditions</a>.
+                </label>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-xs-12">
+                  <div class="form-group">
+                    <input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <div class="form-group">
+                    <a href="#" class="btn btn-success btn-block btn-lg">Sign In</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
