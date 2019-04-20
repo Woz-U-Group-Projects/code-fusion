@@ -36,4 +36,4 @@ UserSchema.pre("save", function(next) {
 });
 
 //mlab collection for users = "appusers"
-module.exports = mongoose.model("User", UserSchema, "appusers");
+module.exports = mongoose.model("User", UserSchema);

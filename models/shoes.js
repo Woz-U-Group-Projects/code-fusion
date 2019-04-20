@@ -5,7 +5,7 @@ var bcrypt = require("bcryptjs");
 
 var Schema = mongoose.Schema;
 
-var UserSchema = new Schema({
+var ShoesSchema = new Schema({
   sku: {
     type: Number,
     required: true,
@@ -90,4 +90,4 @@ var UserSchema = new Schema({
 // });
 
 //mlab collection for shoes = "shoes"
-module.exports = mongoose.model("Shoes", UserSchema, "shoes");
+module.exports = mongoose.model("Shoes", ShoesSchema);
