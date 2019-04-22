@@ -1,7 +1,5 @@
-import mongoose from 'mongoose';
-
 var mongoose = require("mongoose");
-var bcrypt = require("bcryptjs");
+// var bcrypt = require("bcryptjs");
 
 var Schema = mongoose.Schema;
 
@@ -90,4 +88,4 @@ var ShoesSchema = new Schema({
 // });
 
 //mlab collection for shoes = "shoes"
-module.exports = mongoose.model("Shoes", ShoesSchema);
+module.exports = mongoose.model("Shoes", ShoesSchema, 'shoes');

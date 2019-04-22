@@ -1,5 +1,3 @@
-import mongoose from 'mongoose';
-
 var mongoose = require("mongoose");
 var bcrypt = require("bcryptjs");
 
@@ -36,4 +34,4 @@ UserSchema.pre("save", function(next) {
 });
 
 //mlab collection for users = "appusers"
-module.exports = mongoose.model("User", UserSchema);
+module.exports = mongoose.model("User", UserSchema, 'appusers');
