@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
 
-var ShoesSchema = new Schema({
+var ShoeSchema = new Schema({
   sku: {
     type: Number,
     required: true,
@@ -88,4 +88,4 @@ var ShoesSchema = new Schema({
 // });
 
 //mlab collection for shoes = "shoes"
-module.exports = mongoose.model("Shoes", ShoesSchema, 'shoes');
+module.exports = mongoose.model("Shoe", ShoeSchema, 'shoes');
