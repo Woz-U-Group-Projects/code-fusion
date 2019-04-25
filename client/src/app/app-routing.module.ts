@@ -7,10 +7,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { ReceivingComponent } from './receiving/receiving.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
+  { path: 'login', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: LoginComponent },
   { path: '', pathMatch: 'full', redirectTo: '/home' },
   { path: 'receiving', component: ReceivingComponent },
 ];
