@@ -11,9 +11,10 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { ReceivingComponent } from './receiving/receiving.component';
+import { InventoryComponent } from './inventory/inventory.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent, HeaderComponent, HomeComponent, ProfileComponent, ItemDetailComponent, ReceivingComponent],
+  declarations: [AppComponent, LoginComponent, RegisterComponent, HeaderComponent, HomeComponent, ProfileComponent, ItemDetailComponent, ReceivingComponent, InventoryComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,41 +1,44 @@
 <div class="container">
   <h1>Inventory Receiving Item Entry Form</h1>
   <br />
+  <p>
 
-  <input [(ngModel)]="item-detail.sku" placeholder="SKU" />
+  <input [(ngModel)]="itemDetail.sku" placeholder="SKU" />
 
-  <input [(ngModel)]="item-detail.asin" placeholder="ASIN" />
+  <input [(ngModel)]="itemDetail.asin" placeholder="ASIN" />
 
-  <input [(ngModel)]="item-detail.department" placeholder="Mens, Womens, Kids" />
+  <input [(ngModel)]="itemDetail.department" placeholder="Mens, Womens, Kids" />
 
-  <input [(ngModel)]="item-detail.type" placeholder="Shoe Type" />
+  <input [(ngModel)]="itemDetail.type" placeholder="Shoe Type" />
 
-  <input [(ngModel)]="item-detail.brand" placeholder="Brand" />
+  <input [(ngModel)]="itemDetail.brand" placeholder="Brand" />
  
-  <input [(ngModel)]="item-detail.model" placeholder="Model" />
+  <input [(ngModel)]="itemDetail.model" placeholder="Model" />
 
-  <input [(ngModel)]="item-detail.size" placeholder="Size" />
+  <input [(ngModel)]="itemDetail.size" placeholder="Size" />
  
-  <input [(ngModel)]="item-detail.width" placeholder="Width" />
+  <input [(ngModel)]="itemDetail.width" placeholder="Width" />
 
-  <input [(ngModel)]="item-detail.color" placeholder="Color" />
+  <input [(ngModel)]="itemDetail.color" placeholder="Color" />
  
-  <input [(ngModel)]="item-detail.shipWeight" placeholder="Shipping Weight" />
+  <input [(ngModel)]="itemDetail.shipWeight" placeholder="Shipping Weight" />
 
-  <input [(ngModel)]="item-detail.shipWidth" placeholder="Shipping box width" />
+  <input [(ngModel)]="itemDetail.shipWidth" placeholder="Shipping box width" />
 
-  <input [(ngModel)]="item-detail.shipHeight" placeholder="Shipping box height" />
+  <input [(ngModel)]="itemDetail.shipHeight" placeholder="Shipping box height" />
 
-  <input [(ngModel)]="item-detail.shipDepth" placeholder="Shipping box depth" />
+  <input [(ngModel)]="itemDetail.shipDepth" placeholder="Shipping box depth" />
 
-  <input [(ngModel)]="item-detail.priceList" placeholder="MSRP list price" />
+  <input [(ngModel)]="itemDetail.priceList" placeholder="MSRP list price" />
 
-  <input [(ngModel)]="item-detail.priceRetail" placeholder="Retail price" />
+  <input [(ngModel)]="itemDetail.priceRetail" placeholder="Retail price" />
 
-  <input [(ngModel)]="item-detail.priceSavings" placeholder="MSRP minus Retail" />
+  <input [(ngModel)]="itemDetail.priceSavings" placeholder="MSRP minus Retail" />
 
-  <input [(ngModel)]="item-detail.percentSavings" placeholder="Percent savings" />
+  <input [(ngModel)]="itemDetail.percentSavings" placeholder="Percent savings" />
 
-  <input [(ngModel)]="item-detail.priceWholesale" placeholder="Wholesale cost" />
-
+  <input [(ngModel)]="itemDetail.priceWholesale" placeholder="Wholesale cost" />
+<br>
+  <button (click)="addItem()">Add Item</button>
+</p>
 </div>

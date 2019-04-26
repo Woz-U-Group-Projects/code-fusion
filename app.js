@@ -8,6 +8,7 @@ var cors = require("cors");
 
 var indexRouter = require("./routes/index");
 var userRouter = require("./routes/users");
+var inventoryRouter = require('./routes/inventory');
 
 var app = express();
 
@@ -23,6 +24,7 @@ app.use(cors({ origin: "http://localhost:4200", credentials: true }));
 
 app.use("/", indexRouter);
 app.use("/users", userRouter);
+app.use('/inventory', inventoryRouter);
 
 // connect to a local mongodb, chave to URL if hosted database
 var mongoDB = "mongodb://dbuser:password1@ds137596.mlab.com:37596/codefusion";

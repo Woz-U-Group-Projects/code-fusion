@@ -1,12 +1,12 @@
-import { Component, OnInit } from "@angular/core";
-import { User } from "../user";
-import { UserService } from "../user.service";
-import { Router } from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
+import { UserService } from '../user.service';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: "app-register",
-  templateUrl: "./register.component.html",
-  styleUrls: ["./register.component.css"]
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
   // initialize an empty user object
@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
   register(): void {
     this.userService.registerUser(this.user).subscribe(() => {
       // user registered, send them to the login page
-      this.router.navigate(["/login"]);
+      this.router.navigate(['/login']);
     });
   }
   ngOnInit() {}

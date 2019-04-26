@@ -87,3 +87,7 @@ router.get("/validateToken", authService.verifyUser, function(req, res, next) {
 });
 
 module.exports = router;
+
+
+
+

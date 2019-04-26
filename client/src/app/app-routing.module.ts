@@ -5,6 +5,8 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ReceivingComponent } from './receiving/receiving.component';
+import { InventoryComponent } from './inventory/inventory.component';
+
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -13,6 +15,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', pathMatch: 'full', redirectTo: '/home' },
   { path: 'receiving', component: ReceivingComponent },
+  { path: 'inventory', component: InventoryComponent },
 ];
 
 @NgModule({

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemDetail } from '../item-detail';
+import { ItemDetailService } from '../item-detail.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-receiving',
@@ -6,8 +10,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./receiving.component.css']
 })
 export class ReceivingComponent implements OnInit {
+  // initialize an empty shoe object
 
-  constructor() { }
+  itemDetail: ItemDetail = new ItemDetail();
+
+  constructor(private itemDetailService: ItemDetailService, private router: Router) { }
+
+  addItem(): void {
+    this.itemDetailService.addNewItem(this.itemDetail).subscribe(
+      () => {
+      // item added, send them to inventory page
+      this.router.navigate(['/inventory']);
+    }
+    );
+  }
 
   ngOnInit() {
   }
