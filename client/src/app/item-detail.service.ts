@@ -15,9 +15,11 @@ export class ItemDetailService {
   options = { withCredentials: true };
 
   // base url of the express back end
+// tslint:disable-next-line: no-inferrable-types
   url: string = 'http://localhost:3000/inventory/receiving';
 
  // boolean value to hold the login status
+// tslint:disable-next-line: no-inferrable-types
   loggedIn: boolean = false;
 
  // add a shoe item to inventory

@@ -1,12 +1,12 @@
-import { Component, OnInit } from "@angular/core";
-import { User } from "../user";
-import { UserService } from "../user.service";
-import { Router } from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
+import { UserService } from '../user.service';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: "app-login",
-  templateUrl: "./login.component.html",
-  styleUrls: ["./login.component.css"]
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
   user: User = new User();
@@ -19,11 +19,11 @@ export class LoginComponent implements OnInit {
           // set the user to logged in
           this.userService.loggedIn = true;
           // send to the profile page
-          this.router.navigate(["/"]);
+          this.router.navigate(['/']);
         });
       },
       err => {
-        console.log("unauthorized");
+        console.log('unauthorized');
         console.log(err.status);
         console.log(err);
       }
