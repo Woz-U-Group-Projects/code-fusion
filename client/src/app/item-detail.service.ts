@@ -16,7 +16,7 @@ export class ItemDetailService {
 
   // base url of the express back end
 // tslint:disable-next-line: no-inferrable-types
-  url: string = 'http://localhost:3000/inventory/receiving';
+  url: string = 'http://localhost:3000/inventory';
 
  // boolean value to hold the login status
 // tslint:disable-next-line: no-inferrable-types
@@ -25,7 +25,19 @@ export class ItemDetailService {
  // add a shoe item to inventory
  // POST base url/receiving
  addNewItem(itemDetail: ItemDetail): Observable<string> {
-   return this.http.post<string>(this.url + '', itemDetail, this.options);
+   return this.http.post<string>(this.url + '/receiving', itemDetail, this.options);
  }
+
+//  getAllInventory() {
+//   return new Promise((resolve, reject) => {
+//     this.http.get('/inventory')
+//       .map(res => res.json())
+//       .subscribe(res => {
+//         resolve(res);
+//       }, (err) => {
+//         reject(err);
+//       });
+//   });
+//  }
 
 }

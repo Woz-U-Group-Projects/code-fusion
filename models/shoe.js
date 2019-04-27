@@ -7,15 +7,11 @@ var ShoeSchema = new Schema({
   sku: {
     type: Number,
     required: true,
-    //unique not required. You can have multiple of the same SKUs
-    unique: false
   },
   //ASIN is for Amazon tracking
   asin: {
     type: String,
     required: true,
-    //Unique not required. You can have multiple of the same ASIN
-    unique: false
   },
   department: {
     type: String,

@@ -22,7 +22,7 @@ router.post('/receiving', function(req, res, next) {
             width: req.body.width,
             color: req.body.color,
             shipWeight: req.body.shipWeight,
-            shipWidth: req.body.width,
+            shipWidth: req.body.shipWidth,
             shipHeight: req.body.shipHeight,
             shipDepth: req.body.shipDepth,
             priceList: req.body.priceList,

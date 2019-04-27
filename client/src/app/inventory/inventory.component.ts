@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemDetail } from '../item-detail';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-inventory',
