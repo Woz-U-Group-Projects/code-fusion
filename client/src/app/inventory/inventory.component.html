@@ -1,3 +1,53 @@
 <p>
-  inventory works!
+  <button routerLink="/receiving"> Add a Product</button>
 </p>
+<br>
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>SKU</th>
+          <th>ASIN</th>
+          <th>Department</th>
+          <th>Type</th>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>Size</th>
+          <th>Width</th>
+          <th>Color</th>
+          <th>Shipping Weight</th>
+          <th>Shipping Width</th>
+          <th>Shipping Height</th>
+          <th>Shipping Depth</th>
+          <th>List Price</th>
+          <th>Retail Price</th>
+          <th>Discount %</th>
+          <th>Discount $</th>
+          <th>Wholesale Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let itemDetail of itemDetails">
+        <td>{{  itemDetail.id }}</td>
+        <td>{{  itemDetail.sku}}</td>
+        <td>{{  itemDetail.asin}}</td>
+        <td>{{  itemDetail.department}}</td>
+        <td>{{  itemDetail.type}}</td>
+        <td>{{  itemDetail.brand}}</td>
+        <td>{{  itemDetail.model}}</td>
+        <td>{{  itemDetail.size}}</td>
+        <td>{{  itemDetail.width}}</td>
+        <td>{{  itemDetail.color}}</td>
+        <td>{{  itemDetail.shipWeight}}</td>
+        <td>{{  itemDetail.shipWidth}}</td>
+        <td>{{  itemDetail.shipHeight}}</td>
+        <td>{{  itemDetail.shipDepth}}</td>
+        <td>{{  itemDetail.priceList}}</td>
+        <td>{{  itemDetail.priceRetail}}</td>
+        <td>{{  itemDetail.priceSavings}}</td>
+        <td>{{  itemDetail.percentSavings}}</td>
+        <td>{{  itemDetail.priceWholesale}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

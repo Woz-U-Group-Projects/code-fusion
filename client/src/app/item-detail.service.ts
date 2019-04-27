@@ -21,12 +21,9 @@ export class ItemDetailService {
   loggedIn: boolean = false;
 
  // add a shoe item to inventory
- // POST baserl/receiving
- addNewItem(itemDetail: ItemDetail): Observable<string>{
+ // POST base url/receiving
+ addNewItem(itemDetail: ItemDetail): Observable<string> {
    return this.http.post<string>(this.url + '', itemDetail, this.options);
  }
 
 }
-
-
-// addNewItem 

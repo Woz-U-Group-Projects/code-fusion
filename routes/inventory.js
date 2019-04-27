@@ -46,6 +46,12 @@ router.get("/receiving", function(req, res, next) {
   res.send("hello!");
 });
 
+router.get("/validateToken", authService.verifyUser, function(req, res, next) {
+    // if there is a token we return true
+    // this only happens if verifyUser is passed successfully (validates token)
+    res.json(true);
+  });
+
 /*  */
 
 module.exports = router;
