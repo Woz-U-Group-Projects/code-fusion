@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
           // set the user to logged in
           this.userService.loggedIn = true;
           // send to the profile page
-          this.router.navigate(["/profile"]);
+          this.router.navigate(["/"]);
         });
       },
       err => {

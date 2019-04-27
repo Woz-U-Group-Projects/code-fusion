@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
     this.userService.logout().subscribe(response => {
       this.userService.loggedIn = false;
       console.log("logging out");
-      this.router.navigate(["/home"]);
+      this.router.navigate(["/login"]);
     });
     return false;
   }
