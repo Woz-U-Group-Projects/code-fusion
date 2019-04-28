@@ -3,101 +3,111 @@
 </div>
 
 
-  <div class="container">
-    <form>
+<div class="container">
+  <form>
 
-        <div class="form-group">
-            <label for="sku">SKU: </label>
-  <input [(ngModel)]="itemDetail.sku" placeholder="SKU" type="number" class="form-control" name="sku"/>
-</div>
+    <div class="form-group">
+      <label for="sku">SKU: </label>
+      <input [(ngModel)]="itemDetail.sku" placeholder="SKU" type="number" class="form-control" name="sku" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="asin">ASIN: </label>
-  <input [(ngModel)]="itemDetail.asin" placeholder="ASIN" type="text" class="form-control" name="asin"/>
-</div>
+      <input [(ngModel)]="itemDetail.asin" placeholder="ASIN" type="text" class="form-control" name="asin" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="department">Department: </label>
-  <input [(ngModel)]="itemDetail.department" placeholder="Mens, Womens, Kids" type="text" class="form-control" name="department"/>
-</div>
+      <input [(ngModel)]="itemDetail.department" placeholder="Mens, Womens, Kids" type="text" class="form-control"
+        name="department" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="type">Shoe Type: </label>
-  <input [(ngModel)]="itemDetail.type" placeholder="Shoe Type" type="text" class="form-control" name="type"/>
-</div>
+      <input [(ngModel)]="itemDetail.type" placeholder="Shoe Type" type="text" class="form-control" name="type" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="brand">Shoe Brand: </label>
-  <input [(ngModel)]="itemDetail.brand" placeholder="Brand" type="text" class="form-control" name="brand"/>
-</div>
+      <input [(ngModel)]="itemDetail.brand" placeholder="Brand" type="text" class="form-control" name="brand" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="model">Shoe Model: </label>
-  <input [(ngModel)]="itemDetail.model" placeholder="Model" type="text" class="form-control" name="model"/>
-</div>
+      <input [(ngModel)]="itemDetail.model" placeholder="Model" type="text" class="form-control" name="model" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="size">Shoe Size: </label>
-  <input [(ngModel)]="itemDetail.size" placeholder="Size" type="number" class="form-control" name="size"/>
-</div>
+      <input [(ngModel)]="itemDetail.size" placeholder="Size" type="number" class="form-control" name="size" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="width">Shoe Width: </label>
-  <input [(ngModel)]="itemDetail.width" placeholder="Width" type="text" class="form-control" name="width"/>
-</div>
+      <input [(ngModel)]="itemDetail.width" placeholder="Width" type="text" class="form-control" name="width" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="color">Shoe Color: </label>
-  <input [(ngModel)]="itemDetail.color" placeholder="Color" type="text" class="form-control" name="color"/>
-</div>
+      <input [(ngModel)]="itemDetail.color" placeholder="Color" type="text" class="form-control" name="color" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="shipWeight">Shipping Box Weight: </label>
-  <input [(ngModel)]="itemDetail.shipWeight" placeholder="Shipping Weight" type="number" class="form-control" name="shipWeight"/>
-</div>
+      <input [(ngModel)]="itemDetail.shipWeight" placeholder="Shipping Weight" type="number" class="form-control"
+        name="shipWeight" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="shipWidth">Shipping Box Width: </label>
-  <input [(ngModel)]="itemDetail.shipWidth" placeholder="Shipping box width" type="number" class="form-control" name="shipWidth"/>
-</div>
+      <input [(ngModel)]="itemDetail.shipWidth" placeholder="Shipping box width" type="number" class="form-control"
+        name="shipWidth" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="shipHeight">Shipping Box Height: </label>
-  <input [(ngModel)]="itemDetail.shipHeight" placeholder="Shipping box height" type="number" class="form-control" name="shipHeight"/>
-</div>
+      <input [(ngModel)]="itemDetail.shipHeight" placeholder="Shipping box height" type="number" class="form-control"
+        name="shipHeight" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="shipDepth">Shipping Box Depth: </label>
-  <input [(ngModel)]="itemDetail.shipDepth" placeholder="Shipping box depth" type="number" class="form-control" name="shipDepth"/>
-</div>
+      <input [(ngModel)]="itemDetail.shipDepth" placeholder="Shipping box depth" type="number" class="form-control"
+        name="shipDepth" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="priceList">MSRP: </label>
-  <input [(ngModel)]="itemDetail.priceList" placeholder="MSRP list price" type="number" class="form-control" name="priceList"/>
-</div>
+      <input [(ngModel)]="itemDetail.priceList" placeholder="MSRP list price" type="number" class="form-control"
+        name="priceList" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="priceRetail">Retail Price: </label>
-  <input [(ngModel)]="itemDetail.priceRetail" placeholder="Retail price" type="number" class="form-control" name="priceRetail"/>
-</div>
+      <input [(ngModel)]="itemDetail.priceRetail" placeholder="Retail price" type="number" class="form-control"
+        name="priceRetail" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="priceSavings">$ Discount to MSRP: </label>
-  <input [(ngModel)]="itemDetail.priceSavings" placeholder="MSRP minus Retail" type="number" class="form-control" name="priceSavings"/>
-</div>
+      <input [(ngModel)]="itemDetail.priceSavings" placeholder="MSRP minus Retail" type="number" class="form-control"
+        name="priceSavings" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="percentSavings">% Discount to MSRP: </label>
-  <input [(ngModel)]="itemDetail.percentSavings" placeholder="Percent savings" type="number" class="form-control" name="percentSavings"/>
-</div>
+      <input [(ngModel)]="itemDetail.percentSavings" placeholder="Percent savings" type="number" class="form-control"
+        name="percentSavings" />
+    </div>
 
-  <div class="form-group">
+    <div class="form-group">
       <label for="priceWholesale">Wholesale Cost: </label>
-  <input [(ngModel)]="itemDetail.priceWholesale" placeholder="Wholesale cost" type="number" class="form-control" name="priceWholesale"/>
-</div>
-  
-<br>
-  <button (click)="addItem()">Add Item</button>
+      <input [(ngModel)]="itemDetail.priceWholesale" placeholder="Wholesale cost" type="number" class="form-control"
+        name="priceWholesale" />
+    </div>
 
-</form>
+    <br>
+    <button (click)="addItem()">Add Item</button>
+
+  </form>
 </div>
