@@ -28,16 +28,4 @@ export class ItemDetailService {
    return this.http.post<string>(this.url + '/receiving', itemDetail, this.options);
  }
 
-//  getAllInventory() {
-//   return new Promise((resolve, reject) => {
-//     this.http.get('/inventory')
-//       .map(res => res.json())
-//       .subscribe(res => {
-//         resolve(res);
-//       }, (err) => {
-//         reject(err);
-//       });
-//   });
-//  }
-
 }
