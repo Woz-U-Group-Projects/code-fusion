@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/"><img src="../assets/images/ITP_logo.png" alt=""></a>
+    <button class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <!-- <a class="nav-link nav-item" routerLink="/">Home</a> -->
+      <a
+        *ngIf="!userService.loggedIn"
+        class="nav-item nav-link"
+        routerLink="/login"
+        >Login</a
+      >
+      <a
+      *ngIf="userService.loggedIn"
+      class="nav-item nav-link"
+      routerLink="/inventory"
+      >Inventory</a
+      >
+      <a
+      *ngIf="userService.loggedIn"
+      class="nav-item nav-link"
+      routerLink="/receiving"
+      >Receiving</a
+      >
+      <a
+        *ngIf="!userService.loggedIn"
+        class="nav-item nav-link"
+        routerLink="/register"
+        >Register</a
+      >
+      <a
+        *ngIf="userService.loggedIn"
+        class="nav-item nav-link"
+        routerLink="/profile"
+        >Profile</a
+      >
+      <a
+        *ngIf="userService.loggedIn"
+        class="nav-item nav-link"
+        href=""
+        (click)="logout()"
+        >Logout</a
+      >
+    </div>
+  </div>
+</nav>
