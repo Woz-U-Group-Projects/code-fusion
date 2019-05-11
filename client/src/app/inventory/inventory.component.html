@@ -1,6 +1,10 @@
 <button routerLink="/receiving">Add a Product</button>
 
 <br>
+<div>
+  <input ng-model="searchText" type="text" name="search">
+</div>
+
 <div class="container">
   <table class="table table-striped">
     <thead>
@@ -26,7 +30,7 @@
         </tr>
     </thead>
     <tbody>
-      <!-- <tr *ngFor="let itemDetail of itemDetails">
+      <tr *ngFor="let itemDetail of itemDetail | filter:searchText">
         <td>{{  itemDetail.id }}</td>
         <td>{{  itemDetail.sku}}</td>
         <td>{{  itemDetail.asin}}</td>
@@ -46,7 +50,7 @@
         <td>{{  itemDetail.priceSavings}}</td>
         <td>{{  itemDetail.percentSavings}}</td>
         <td>{{  itemDetail.priceWholesale}}</td>
-      </tr> -->
+      </tr>
     </tbody>
   </table>
 </div>
