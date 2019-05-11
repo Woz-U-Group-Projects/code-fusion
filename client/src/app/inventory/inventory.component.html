@@ -2,7 +2,7 @@
 
 <br>
 <div>
-  <input ng-model="searchText" type="text" name="search">
+  <input [(ngModel)]="searchText">
 </div>
 
 <div class="container">
@@ -30,7 +30,8 @@
         </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let itemDetail of itemDetail | filter:searchText">
+      <!-- add | filter: searchText after itemDetail on below line for search bar -->
+      <tr *ngFor="let itemDetail of itemDetail">
         <td>{{  itemDetail.id }}</td>
         <td>{{  itemDetail.sku}}</td>
         <td>{{  itemDetail.asin}}</td>
