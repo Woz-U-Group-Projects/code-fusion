@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ItemDetail } from './item-detail';
+import { ItemDetails } from './item-detail';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -24,8 +24,12 @@ export class ItemDetailService {
 
  // add a shoe item to inventory
  // POST base url/receiving
- addNewItem(itemDetail: ItemDetail): Observable<string> {
+ addNewItem(itemDetail: ItemDetails): Observable<string> {
    return this.http.post<string>(this.url + '/receiving', itemDetail, this.options);
  }
+
+ submit(model: ItemDetails[]) {
+  return this.http.post<any>(this.url, model)
+}
 
 }

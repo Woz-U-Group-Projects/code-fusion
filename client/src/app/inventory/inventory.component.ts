@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemDetail } from '../item-detail';
-import { Observable } from 'rxjs';
+import { ItemDetails } from '../item-detail';
+import { Observable, of } from 'rxjs';
+import { ItemDetailService } from '../item-detail.service';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-inventory',
@@ -9,9 +12,24 @@ import { Observable } from 'rxjs';
 })
 export class InventoryComponent implements OnInit {
 
-  constructor() { }
+  private itemRoute = "http://localhost:3000/inventory"
+  public itemDetails: ItemDetails[];
+  itemDataService: ItemDetailService
+
+  constructor(private http: HttpClient, private itemsService: ItemDetailService) {
+    this.itemDataService=this.itemsService
+   }
+
+  getItemDetails() {
+    this.http.get<ItemDetails[]>(this.itemRoute).subscribe(itemDetails => {
+      this.itemDetails = itemDetails;
+    })
+  }
+
+
 
   ngOnInit() {
+    this.getItemDetails();
   }
 
 }

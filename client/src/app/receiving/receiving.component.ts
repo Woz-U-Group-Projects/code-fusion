@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemDetail } from '../item-detail';
+import { ItemDetails } from '../item-detail';
 import { ItemDetailService } from '../item-detail.service';
 import { Router } from '@angular/router';
 
@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class ReceivingComponent implements OnInit {
   // initialize an empty shoe object
 
-  itemDetail: ItemDetail = new ItemDetail();
+  itemDetail: ItemDetails = new ItemDetails();
 
   constructor(private itemDetailService: ItemDetailService, private router: Router) { }
 
