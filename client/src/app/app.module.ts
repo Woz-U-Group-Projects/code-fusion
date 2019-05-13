@@ -12,12 +12,13 @@ import { ProfileComponent } from './profile/profile.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { ReceivingComponent } from './receiving/receiving.component';
 import { InventoryComponent } from './inventory/inventory.component';
+import { ItemDetailService } from './item-detail.service';
 
 @NgModule({
 // tslint:disable-next-line: max-line-length
   declarations: [AppComponent, LoginComponent, RegisterComponent, HeaderComponent, HomeComponent, ProfileComponent, ItemDetailComponent, ReceivingComponent, InventoryComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
-  providers: [],
+  providers: [ItemDetailService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

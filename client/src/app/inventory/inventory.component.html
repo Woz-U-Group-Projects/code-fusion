@@ -1,9 +1,9 @@
 <button routerLink="/receiving">Add a Product</button>
 
 <br>
-<div>
+<!--<div>
   <input [(ngModel)]="searchText">
-</div>
+</div>-->
 
 <div class="container">
   <table class="table table-striped">
@@ -30,8 +30,8 @@
         </tr>
     </thead>
     <tbody>
-      <!-- add | filter: searchText after itemDetail on below line for search bar -->
-      <tr *ngFor="let itemDetail of itemDetail">
+      <!-- | filter: searchText  -->
+      <tr *ngFor="let itemDetail of itemDetails">
         <td>{{  itemDetail.id }}</td>
         <td>{{  itemDetail.sku}}</td>
         <td>{{  itemDetail.asin}}</td>
@@ -55,3 +55,4 @@
     </tbody>
   </table>
 </div>
+

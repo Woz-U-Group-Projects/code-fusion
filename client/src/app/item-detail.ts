@@ -1,4 +1,4 @@
-export class ItemDetail {
+export class ItemDetails {
     id: number;
     sku: number;
     asin: string;
