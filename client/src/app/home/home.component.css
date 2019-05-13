@@ -63,4 +63,9 @@
   
     .h2 {
       text-align: center;
-  } }
+  } 
+
+    #inventoryBtn {
+      padding-bottom: 35px;
+    }
+}

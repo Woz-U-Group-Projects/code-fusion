@@ -7,14 +7,14 @@
 					<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 						<body class="container-fluid" >
 							<div class="container-fluid">
-								<h1 class="h1">Inventory Managment System</h1>
-								<h2 class="h2">Home Page</h2>
+								<h1 class="h1">Welcome {{user.username}}</h1>
+								<h2 class="h2">Main Page</h2>
 								<br />
 								<div class="container-fluid">
 									<button type="button" class="btn btn-primary btn-lg btn-block" routerLink="/receiving">Recieving</button>
 								</div>
 								<br />
-								<div class="container-fluid">
+								<div class="container-fluid" id= "inventoryBtn">
 									<button type="button" class="btn btn-secondary btn-lg btn-block"routerLink="/inventory">Inventory</button>
 									
 								</div>
